@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srity | Digital Creator</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b16;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 9%;
+    background: #111120;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a78bfa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #a78bfa;
+}
+
+.hero p {
+    color: #b8b8c8;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #a78bfa;
+}
+
+.about p {
+    color: #c5c5d4;
+    line-height: 1.9;
+    max-width: 750px;
+    margin: auto;
+}
+
+.skills, .projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #17172a;
+    border: 1px solid #34304f;
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #a78bfa;
+}
+
+.card p {
+    color: #b8b8c8;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.contact p {
+    color: #ccc;
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111120;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SRITY.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <p>WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span>Srity</span></h1>
+    <h2>Digital Marketer & Creative Explorer</h2>
+    <p>
+        Exploring the world of Digital Marketing, SEO,
+        Artificial Intelligence and Web Development.
+        I love learning, creating and building new ideas.
+    </p>
+    <a href="#projects" class="btn">Explore My Work</a>
+</div>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I'm Srity, a creative learner passionate about
+        Digital Marketing, Search Engine Optimization,
+        Artificial Intelligence and Web Development.
+        I enjoy exploring new technologies and creating
+        meaningful digital experiences.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>SEO</h3>
+            <p>Search Engine Optimization</p>
+        </div>
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>Online Marketing Strategies</p>
+        </div>
+        <div class="card">
+            <h3>AI Tools</h3>
+            <p>AI Content & Creative Projects</p>
+        </div>
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>HTML, CSS & Web Design</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>My personal website built with HTML and CSS.</p>
+        </div>
+        <div class="card">
+            <h3>AI Creative Projects</h3>
+            <p>Creative experiments using AI tools.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>SEO and digital marketing projects.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>Interested in collaboration or creative projects?</p>
+    <a href="https://github.com/srity0109"
+       class="btn" target="_blank">My GitHub</a>
+</section>
+
+<footer>
+    © 2026 Srity | All Rights Reserved.
+</footer>
+
+</body>
+</html>
